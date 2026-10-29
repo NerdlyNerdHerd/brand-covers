@@ -168,6 +168,13 @@ def glyph(key):
         s += G(f'M{x0-25},{y0+10} L{x0+25},{y0+10} M{x0-28},{y0+48} L{x0+28},{y0+48} M{x0-70},{y0+84} L{x0+70},{y0+84}')
         s += G(f'M{x0-36},{y0-56} L{x0-104},{y0-82} M{x0-36},{y0-44} L{x0-104},{y0-24} M{x0+36},{y0-56} L{x0+104},{y0-82} M{x0+36},{y0-44} L{x0+104},{y0-24}')
         return s
+    if key == 'offers':  # gift-wrapped package with bow
+        s = f'<rect x="{x0-84}" y="{y0-30}" width="168" height="110" rx="12"/>'
+        s += f'<rect x="{x0-96}" y="{y0-62}" width="192" height="32" rx="10"/>'
+        s += G(f'M{x0},{y0-62} L{x0},{y0+80}')
+        s += G(f'M{x0},{y0-62} C{x0-20},{y0-98} {x0-64},{y0-96} {x0-52},{y0-74} C{x0-44},{y0-62} {x0-18},{y0-62} {x0},{y0-62} '
+               f'C{x0+18},{y0-62} {x0+44},{y0-62} {x0+52},{y0-74} C{x0+64},{y0-96} {x0+20},{y0-98} {x0},{y0-62}')
+        return s
     raise KeyError(key)
 
 
@@ -188,6 +195,7 @@ SECTORS = [
     ('security', VIOLET, CORAL, 'rings', 900),
     ('meetings', VIOLET, TEAL, 'triskele', 930),
     ('partner-kb', BLUE, PINK, 'triquetra', 900),
+    ('offers', GOLD, PINK, 'rings', 920),
 ]
 
 

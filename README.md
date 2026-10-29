@@ -28,5 +28,6 @@ glow, neon heartbeat line, Celtic motif, a line-art glyph in the badge. Built by
 | sector-security | senior-staff, executive and access pages |
 | sector-meetings | meeting hubs |
 | sector-partner-kb | Partner Knowledge Base articles |
+| sector-offers | Nerdly offers & products (sister-brand offers use their brand cover) |
 
 Brand pages keep `brand-nerdly`; retired pages use `team/covers/archive-2025`.
